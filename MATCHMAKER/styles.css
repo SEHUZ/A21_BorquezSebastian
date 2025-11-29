@@ -88,3 +88,53 @@ fieldset {
 .button:hover {
     background: #f5839b;
 }
+
+.match {
+    padding: 3rem;
+    max-width: 800px;
+    text-align: left;
+    display: flex;
+    flex-direction:column;
+    position: relative;
+    align-items: center;
+    transform: rotate(-5deg);
+}
+
+.match img {
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+header .match-name {
+    display:felx;
+    justify-content: space-between;
+    gap: 2.5rem;
+
+}
+
+.match-name p {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #EC789A;
+    margin: 0;
+}
+
+.match-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.match-info p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 0.95rem;
+
+}
+
+.match-info strong {
+    font-weight: bold;
+    color: #333;
+}
