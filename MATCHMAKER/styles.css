@@ -144,3 +144,17 @@ header .match-name {
     outline-color: #f05d71;
     outline-width: 2px;
 }
+
+.error {
+    border-color: #e74c3c !important;
+    outline-color: #e74c3c !important;
+}
+
+.valido {
+    border-color: #2ecc71 !important;
+    outline-color: #2ecc71 !important;
+}
+
+label.error {
+    color: #e74c3c;
+}
