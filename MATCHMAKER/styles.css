@@ -9,7 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('./imgs/fondo.jpg');
+    background-image: url("../imgs/pattern.svg");
     background-repeat: repeat;
     background-size: contain;
 }
@@ -137,4 +137,10 @@ header .match-name {
 .match-info strong {
     font-weight: bold;
     color: #333;
+}
+
+.selected {
+    outline-style: solid;
+    outline-color: #f05d71;
+    outline-width: 2px;
 }
