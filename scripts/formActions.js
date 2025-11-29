@@ -36,19 +36,47 @@ window.onload = function () {
     for (let select of selects) {
         select.onfocus = resaltar;
         select.addEventListener("blur", noResaltar);
-
-        llenarNacionalidad();
     }
+
+    llenarNacionalidad();
 }
 
 function resaltar(evento) {
     evento.target.classList.add("selected");
+    resaltarLabel(evento);
 }
 
 function noResaltar(evento) {
     const clase = evento.target.classList.contains("selected");
     if (clase) {
         evento.target.classList.remove("selected");
+    }
+
+    noResaltarLabel(evento);
+}
+
+function resaltarLabel(evento) {
+    const input = evento.target;
+    const labels = document.getElementsByTagName("label");
+    
+    for (let label of labels) {
+        if (label.getAttribute("for") === input.id) {
+            label.classList.add("selected");
+        }
+    }
+}
+
+function noResaltarLabel(evento) {
+    const input = evento.target;
+    const labels = document.getElementsByTagName("label");
+    
+    for (let label of labels) {
+        if (label.getAttribute("for") === input.id) {
+            const clase = label.classList.contains("selected");
+            if (clase) {
+                label.classList.remove("selected");
+            }
+        }
     }
 }
 
